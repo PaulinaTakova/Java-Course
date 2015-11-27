@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Sum {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int a;
+		int sum = 0;
+	
+		do {
+			System.out.println("Enter a number:");
+			a = sc.nextInt();
+			sum += a;
+		} while (a != 0);
+
+		System.out.println("The sum is: " + sum);
+		
+		sc.close();
+	}
+}
