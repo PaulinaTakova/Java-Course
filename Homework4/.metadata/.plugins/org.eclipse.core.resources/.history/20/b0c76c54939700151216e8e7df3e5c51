@@ -1,0 +1,29 @@
+
+public class From30To1 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = new int[30];
+		int[] arr2 = new int[arr.length];
+		
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = i + 1;
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+		
+		for (int i = 0; i < arr2.length; i++){
+			arr2[arr2.length-i-1] = arr[i];
+			System.out.print(arr2[i]+" ");
+		}
+		
+		/*for (int i = 30; i > arr2.length ; i--) {
+			System.out.print(arr2[i] + " ");
+			if(i == 7 || i == 13 || i == 19 || i == 25 ){
+				System.out.println();
+			}
+		}*/
+		
+	}
+
+}
