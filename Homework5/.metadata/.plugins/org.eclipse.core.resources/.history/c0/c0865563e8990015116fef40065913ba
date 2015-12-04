@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SumOfNumbers {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int num = sc.nextInt();
+		
+		sumOfNumbers(num);
+		
+		sc.close();
+	}
+	
+	public static void sumOfNumbers(int num){
+		
+		int sum = 0;
+		
+		for(int i = 1; i<=num; i++){
+			sum += i; 
+		}
+		
+		System.out.println("The sum ot numbers from 1 to "+ num +" is "+ sum);
+	}
+
+}

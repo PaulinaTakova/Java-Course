@@ -1,0 +1,21 @@
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		
+		reverseString("paulina");
+	}
+	
+	public static void reverseString(String str){
+		
+		int i;
+		int len = str.length()-1;
+		
+		for (i = len; i >= 0; i--) {
+			System.out.println(str.charAt(i));
+			
+		}
+		
+	}
+
+}

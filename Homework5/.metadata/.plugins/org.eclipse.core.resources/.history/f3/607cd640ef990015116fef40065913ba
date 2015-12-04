@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class MaxNumber {
+
+	public static void main(String[] args) {
+		
+		 Scanner sc = new Scanner(System.in);
+		 System.out.println("Enter the first number: ");
+		 int a = sc.nextInt();
+		 System.out.println("Enter the second number: ");
+		 int b = sc.nextInt();
+		 System.out.println("Enter the third number: ");
+		 int c = sc.nextInt();
+		 
+		 int result = maxNumber(a, b);
+		 result = maxNumber(c, result );
+		 System.out.println("The biggest number is: " + result);
+		 
+		 sc.close();
+
+	}
+	
+	public static int maxNumber(int num1, int num2 ){
+		int result = 0;
+		if(num1 > num2){
+			result = num1;
+		}else if(num2 > num1){
+			result = num2;
+		}
+		return result;
+	}
+
+}
