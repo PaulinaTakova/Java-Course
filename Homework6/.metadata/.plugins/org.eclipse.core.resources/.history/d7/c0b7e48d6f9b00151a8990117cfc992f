@@ -1,0 +1,33 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Cat[] cat = new Cat[10];
+		
+		cat[0] = new Cat("Lily", 1);
+		cat[0].say();
+		cat[1] = new Cat("Lily", 2);
+		cat[1].say();
+		cat[2] = new Cat("Lily", 3);
+		cat[2].say();
+		cat[3] = new Cat("Lily", 4);
+		cat[3].say();
+		cat[4] = new Cat("Lily", 5);
+		cat[4].say();
+		cat[5] = new Cat("Lily", 6);
+		cat[5].say();
+		cat[6] = new Cat("Lily", 7);
+		cat[6].say();
+		cat[7] = new Cat("Lily", 8);
+		cat[7].say();
+		cat[8] = new Cat("Lily", 9);
+		cat[8].say();
+		cat[9] = new Cat("Lily", 10);
+		cat[9].say();
+		for (int i = 0; i < cat.length; i++) {
+			cat[i].say();
+		}
+	}
+
+}

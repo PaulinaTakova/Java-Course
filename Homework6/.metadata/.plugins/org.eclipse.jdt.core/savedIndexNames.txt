@@ -1,0 +1,6 @@
+INDEX VERSION 1.127+C:\Users\XXX\Desktop\SoftIntellect\Java-Course\Homework6\.metadata\.plugins\org.eclipse.jdt.core
+1626788841.index
+2398663365.index
+401728383.index
+4270999114.index
+1738217456.index

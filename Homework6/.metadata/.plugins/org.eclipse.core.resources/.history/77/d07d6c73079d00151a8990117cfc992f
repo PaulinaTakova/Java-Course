@@ -1,0 +1,31 @@
+
+public class Drink extends Stock {
+	
+	private boolean coldOrHot;
+	private boolean sparkling;
+	
+	public Drink(double price, boolean availability, boolean coldOrHot, boolean sparkling) {
+		super(price, availability);
+		this.coldOrHot = coldOrHot;
+		this.sparkling = sparkling;
+	}
+
+	public boolean isColdOrHot() {
+		return coldOrHot;
+	}
+
+	public void setColdOrHot(boolean coldOrHot) {
+		this.coldOrHot = coldOrHot;
+	}
+
+	public boolean isSparkling() {
+		return sparkling;
+	}
+
+	public void setSparkling(boolean sparkling) {
+		this.sparkling = sparkling;
+	}
+	
+	
+
+}
