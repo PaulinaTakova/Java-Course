@@ -17,9 +17,12 @@ public class SumOfNumbers {
 	public static void sumOfNumbers(int num) {
 
 		int sum = 0;
+		int i = 1;
 
-		for (int i = 1; i <= num; i++) {
+		if(i<=num) {
 			sum += i;
+			i++;
+			sumOfNumbers(num);
 		}
 
 		System.out.println("The sum ot numbers from 1 to " + num + " is " + sum);

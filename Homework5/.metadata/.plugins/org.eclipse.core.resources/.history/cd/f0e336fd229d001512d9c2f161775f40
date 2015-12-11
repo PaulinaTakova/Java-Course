@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num = sc.nextInt();
+		
+		factorialWithRecursion(num);
+		
+		sc.close();
+
+	}
+	
+	public static void factorialWithRecursion(int num2){
+		
+		int factorial = 1;
+		
+		for(int i = 1; i <= num2; i++){
+			factorial *= i;
+		}
+		
+		System.out.println("The result is: " + factorial);
+	}
+
+}

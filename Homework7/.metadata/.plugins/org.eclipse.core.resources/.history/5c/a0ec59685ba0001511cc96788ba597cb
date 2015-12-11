@@ -1,0 +1,48 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Teacher teacher = new Teacher("Ivan", "Petrov", 10, "Math");
+		teacher.checkHomework();
+		teacher.sayGoodMorning();
+		teacher.sayGoodbye();
+		
+		System.out.println();
+		
+		Lecturer lecturer = new Lecturer("Victoria", "Georgieva", 15, "TU", 10);
+		lecturer.checkHomework();
+		lecturer.sayGoodMorning();
+		lecturer.conductExercises();
+		lecturer.conductExercises(6);
+		lecturer.conductExercises(8, 3);
+		
+		System.out.println();
+		
+		SchoolTeacher schoolTeacher = new SchoolTeacher("Emanuil", "Tzvetkov", 8, "History", new String[]{"2a","3b","1v","4g","5a"});
+		schoolTeacher.nameOfClasses();
+		schoolTeacher.checkHomework();
+		schoolTeacher.entertainChildren();
+		
+		System.out.println();
+		
+		CollegeTeacher collegeTeacher = new CollegeTeacher("Gabriela", "Antonova", 9, "Physics", "One of the best colleges in the country");
+		collegeTeacher.checkHomework();
+		
+		System.out.println();
+		
+		Professor professor = new Professor("Georgi", "Ivanov", 12, "UNSS", 10, "Doctor");
+		professor.sayTitleAndYaersService();
+		professor.checkHomework();
+		professor.conductExam();
+		
+		System.out.println();
+		
+		Assistant assistant = new Assistant("Ilian", "Petrov", 3, "Tu", 10, false);
+		assistant.nameAndChiefAssistant();
+		assistant.writeScientificArticle();
+		assistant.checkHomework();
+		assistant.checkExam();
+	}
+
+}
