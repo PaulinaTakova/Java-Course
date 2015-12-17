@@ -1,0 +1,22 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		PersonalAccount p = new PersonalAccount(-52.3, "Ivan", 901214256);
+		try{
+		p.invalidAccount(p);
+		} catch (InvalidAccountException e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		
+		try{
+		
+		}} catch (NegativeMoneyException e){
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+
+	}
+
+}

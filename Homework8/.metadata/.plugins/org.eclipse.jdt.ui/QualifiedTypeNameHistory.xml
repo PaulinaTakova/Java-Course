@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Account"/>
+<fullyQualifiedTypeName name="InvalidAccountException"/>
+<fullyQualifiedTypeName name="PersonalAccount"/>
+<fullyQualifiedTypeName name="NegativeMoneyException"/>
+<fullyQualifiedTypeName name="CoorporativeAccount"/>
+<fullyQualifiedTypeName name="Person"/>
+</qualifiedTypeNameHistroy>

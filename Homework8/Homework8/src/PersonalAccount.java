@@ -1,0 +1,46 @@
+
+public class PersonalAccount extends Account{
+	
+	private String name;
+	private long ID;
+	
+	public PersonalAccount() {
+		super();
+		
+	}
+	
+	public PersonalAccount(double amount, String name, long ID) {
+		super(amount);
+		this.name = name;
+		this.ID = ID;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public long getID() {
+		return ID;
+	}
+
+	public void setID(long ID) {
+		this.ID = ID;
+	}
+
+	public long invalidAccount(PersonalAccount obj) throws InvalidAccountException {
+		if(obj instanceof Account){
+			System.out.println("The ID of a person is: " + obj.getID());
+			return obj.getID();
+		}else {
+			throw new InvalidAccountException("Invalid person account.");
+		}
+	}
+	
+	
+	
+
+}
