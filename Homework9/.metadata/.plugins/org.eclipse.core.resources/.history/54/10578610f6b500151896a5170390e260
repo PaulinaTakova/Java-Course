@@ -1,0 +1,51 @@
+package Book;
+
+import java.util.HashMap;
+
+public class Library {
+	
+	private String name;
+	private String address;
+	HashMap<Book, Integer> collectionOfBooks = new HashMap<Book, Integer>();
+	
+	public Library(String name, String address, HashMap<Book, Integer> collectionOfBooks) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.collectionOfBooks = collectionOfBooks;
+	}
+
+	public Library() {
+		super();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public HashMap<Book, Integer> getCollectionOfBooks() {
+		return collectionOfBooks;
+	}
+
+	public void setCollectionOfBooks(HashMap<Book, Integer> collectionOfBooks) {
+		this.collectionOfBooks = collectionOfBooks;
+	}
+	
+	public void addCopy(){
+		
+	}
+	
+
+}

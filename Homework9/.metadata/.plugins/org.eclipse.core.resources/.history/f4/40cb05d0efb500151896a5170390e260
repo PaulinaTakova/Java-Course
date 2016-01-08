@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class WordOnlyOnce {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter the text");
+		Scanner sc = new Scanner(System.in);
+		String text = sc.nextLine();
+		
+		TreeMap<String, Integer> counter = new TreeMap<String, Integer>();
+		
+		
+	}
+
+}

@@ -1,0 +1,64 @@
+package Student;
+
+import java.util.HashMap;
+
+public class Student {
+	
+	private String name;
+	private String lastName;
+	private int number;
+	HashMap<String, Integer[]> subject = new HashMap<String, Integer[]>();
+	
+	public Student() {
+		super();
+	}
+
+	public Student(String name, String lastName, int number, HashMap<String, Integer[]> subject) {
+		super();
+		this.name = name;
+		this.lastName = lastName;
+		this.number = number;
+		this.subject = subject;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public HashMap<String, Integer[]> getSubject() {
+		return subject;
+	}
+
+	public void setSubject(HashMap<String, Integer[]> subject) {
+		this.subject = subject;
+	}
+	
+	public void addSubjectMark(){
+		
+	}
+	
+	public void calculateAvarageMark(){
+		
+	}
+
+}

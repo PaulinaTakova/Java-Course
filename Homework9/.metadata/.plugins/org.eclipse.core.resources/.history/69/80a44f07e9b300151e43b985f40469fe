@@ -1,0 +1,21 @@
+package Town;
+
+import java.util.HashSet;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		HashSet<Town> town = new HashSet<Town>();
+		
+		town.add(new Town("Sofia", "Bulgaria", 1500000));
+		town.add(new Town("Plovdiv", "Bulgaria", 600000));
+		town.add(new Town("Varna", "Bulgaria", 330000));
+		town.add(new Town("Burgas", "Bulgaria", 200000));
+		town.add(new Town("Blagoevgrad", "Bulgaria", 150000));
+		
+		town.contains("Varna");
+
+	}
+
+}
