@@ -1,0 +1,17 @@
+package Sentence;
+
+public class TEst {
+
+	public static void main(String[] args) {
+		
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append("This ");
+		sb.append("is my best ");
+		sb.append("program");
+		
+		System.out.println(sb.toString());
+
+	}
+
+}

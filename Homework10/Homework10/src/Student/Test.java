@@ -1,0 +1,21 @@
+package Student;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Student[] students = new Student[5];
+		students[0] = new Student("Ivan", "Ivanov", 501214011, 15);
+		students[1] = new Student("Georgi", "Petrov", 501214041, 16);
+		students[2] = new Student("Ivona", "Petkova", 501214017, 15);
+		students[3] = new Student("Aleksandur", "Georgiev", 501214034, 16);
+		students[4] = new Student("Vigtoria", "Angelova", 501214006, 15);
+		
+		for (int i = 0; i < students.length; i++) {
+			String st = students[i].toString();
+			System.out.println(st);
+		}
+
+	}
+
+}
