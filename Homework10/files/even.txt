@@ -1,0 +1,2 @@
+PC without a network connection, and did not have security features built in from the outset. 
+and multi-user PCs, but were not initially designed with Internet security in mind

@@ -1,0 +1,5 @@
+Consumer versions of Windows were originally designed for ease-of-use on a single-user
+PC without a network connection, and did not have security features built in from the outset. 
+However, Windows NT and its successors are designed for security (including on a network) 
+and multi-user PCs, but were not initially designed with Internet security in mind
+as much, since, when it was first developed in the early 1990s, Internet use was less prevalent.

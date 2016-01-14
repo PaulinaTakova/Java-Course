@@ -1,0 +1,3 @@
+Consumer versions of Windows were originally designed for ease-of-use on a single-user
+However, Windows NT and its successors are designed for security (including on a network) 
+as much, since, when it was first developed in the early 1990s, Internet use was less prevalent.

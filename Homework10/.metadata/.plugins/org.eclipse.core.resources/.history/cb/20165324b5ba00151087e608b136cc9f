@@ -1,0 +1,10 @@
+package Country;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		readFile("..\\files\\countries.txt");
+	}
+
+}

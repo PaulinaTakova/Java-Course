@@ -1,0 +1,22 @@
+package Country;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Reading {
+	
+	public static void readFile(String path) throws IOException{
+		
+		FileReader fileReader = new FileReader(path);
+		
+		BufferedReader reader = new BufferedReader(fileReader);
+		
+		while(reader.ready()){
+			String line = reader.readLine();
+			System.out.println(line);
+		}
+		reader.close();
+	}
+
+}
