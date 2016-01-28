@@ -1,0 +1,24 @@
+package DesignPattern;
+
+public class Phone extends Device {
+	
+	private int memory;
+
+	public Phone() {
+		super();
+	}
+	
+	public Phone(String model, String brand, int memory) {
+		super(model, brand);
+		this.memory = memory;
+	}
+
+	public int getMemory() {
+		return memory;
+	}
+
+	public void setMemory(int memory) {
+		this.memory = memory;
+	}
+
+}

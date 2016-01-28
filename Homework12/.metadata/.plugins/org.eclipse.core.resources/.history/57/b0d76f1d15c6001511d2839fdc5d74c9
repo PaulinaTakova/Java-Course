@@ -1,0 +1,28 @@
+package DesignPattern;
+
+public class Laptop extends Device {
+	
+	private String procesor;
+
+	public Laptop() {
+		super();
+	}
+
+	public Laptop(String model, String brand, String procesor) {
+		super(model, brand);
+		this.procesor = procesor;
+	}
+
+	public String getProcesor() {
+		return procesor;
+	}
+
+	public void setProcesor(String procesor) {
+		this.procesor = procesor;
+	}
+	
+	public void infoAboutDevice(Laptop l){
+		System.out.println("The model:" + getModel() + "The brand: " + getBrand() + "Procesor: " + getProcesor());
+	}
+
+}

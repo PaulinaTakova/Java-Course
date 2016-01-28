@@ -1,0 +1,37 @@
+import java.util.Arrays;
+
+public class EvenOdd {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int[] even = new int[5];
+		int[] odd = new int[5];
+		int j = 0;
+		int k = 0;
+		
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] % 2 == 0){
+				even[j] = arr[i];
+				j++;
+			} 
+		}
+		
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] %2 != 0){
+				odd[k] = arr[i];
+				k++;
+			}
+		}
+		
+		for (int i = 0, z = odd.length-1; i < odd.length/2; i++, z--) {
+			int a = odd[i];
+			odd[i] = odd[z];
+			odd[z] = a;		
+		}
+		
+		System.out.println("Even numbers: " + Arrays.toString(even));
+		System.out.println("Odd numbers: " + Arrays.toString(odd));
+	}
+
+}
