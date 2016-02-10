@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Matrix {
+	
+	private int size;
+	private int[][] matrix;
+	
+	public Matrix(int size, int[][] matrix) {
+		super();
+		this.size = size;
+		this.matrix = matrix;
+	}
+
+	public Matrix() {
+		super();
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	public int[][] getMatrix() {
+		return matrix;
+	}
+
+	public void setMatrix(int[][] matrix) {
+		this.matrix = matrix;
+	}
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public int[][] fillMatrix(){
+		
+		System.out.println("Enter the size of the matrix between 2 and 9:");
+		size = sc.nextInt();
+		if(size < 2 || size > 9){
+			System.out.println("The size of ot the matrix is invalid. Enter a number between 2 and 9.");
+			System.exit(0);
+		}
+		
+		matrix = new int[size][size];
+		
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[i].length; j++) {
+				System.out.println("Enter a number to fill the matrix: ");
+				matrix[i][j] = sc.nextInt();
+			}
+		}
+		setMatrix(matrix);
+		return matrix;
+	}
+	
+	public void writeInFile(String path, int[][] matrix){
+		
+	}
+
+}

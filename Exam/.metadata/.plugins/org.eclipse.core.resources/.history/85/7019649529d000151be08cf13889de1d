@@ -1,0 +1,150 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Matrix {
+	
+	private int size;
+	private int[][] matrix;
+	
+	public Matrix(int size, int[][] matrix) {
+		super();
+		this.size = size;
+		this.matrix = matrix;
+	}
+
+	public Matrix() {
+		super();
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	public int[][] getMatrix() {
+		return matrix;
+	}
+
+	public void setMatrix(int[][] matrix) {
+		this.matrix = matrix;
+	}
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public int[][] fillMatrix(){
+		
+		System.out.println("Enter the size of the matrix between 2 and 9:");
+		size = sc.nextInt();
+		if(size < 2 || size > 9){
+			System.out.println("The size of ot the matrix is invalid. Enter a number between 2 and 9.");
+			System.exit(0);
+		}
+		
+		matrix = new int[size][size];
+		
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[i].length; j++) {
+				System.out.println("Enter a number to fill the matrix: ");
+				matrix[i][j] = sc.nextInt();
+			}
+		}
+		
+		System.out.println("The matrix is:");
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[0].length; j++) {
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}
+		
+		setMatrix(matrix);
+		return matrix;
+	}
+	
+	public void writeInFile(String path, int[][] matrix){
+		
+		try {
+			FileWriter fileWriter = new FileWriter(path);
+			BufferedWriter writer = new BufferedWriter(fileWriter);
+			
+			for (int i = 0; i < matrix.length; i++) {
+				for (int j = 0; j < matrix[i].length; j++) {
+					writer.write(Integer.toString(matrix[i][j])+ " ");
+				}
+				writer.newLine();
+				writer.close();
+			}
+		} catch (IOException e) {
+			System.out.println("Error while saving in file." + e.getMessage());
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public int mune(){
+		System.out.println("Choose the option:");
+		System.out.println("1.Saving the matrix in file.");
+		System.out.println("2.The sum of the biggest number int rows, columns and diagonals.");
+		int choise = sc.nextInt();
+		
+		return choise;
+	}
+	
+	public int sumOfTheBiggestNumbers(){
+		
+		int sum = 0;
+		
+		for (int i = 0; i < matrix.length; i++) {
+			int maxInCol = matrix[0][i];
+			for (int j = 0; j < matrix[i].length; j++) {
+				if(maxInCol < matrix[i][j]){
+					maxInCol = matrix[i][j];
+				}
+			}
+			System.out.println("Maximum in column " + i + " is"+ maxInCol);
+			sum += maxInCol;
+			maxInCol = matrix[0][i];
+		}
+		
+		
+		for (int i = 0; i < matrix.length; i++) {
+			int maxInRow = matrix[i][0];
+			for (int j = 0; j < matrix[i].length; j++) {
+				if(maxInRow < matrix[i][j]){
+					maxInRow = matrix[i][j];
+				}
+			}
+			System.out.println("Maximum in row "+ i + " is" + maxInRow);
+			sum += maxInRow;
+			maxInRow = matrix[i][0];
+		}
+		
+		
+		int maxInDiagonal = matrix[0][0];
+		for (int i = 0; i < matrix.length; i++) {
+			if(maxInDiagonal < matrix[i][i]){
+				maxInDiagonal = matrix[i][i];
+			}
+		}
+		System.out.println("Maximun in first diagonal is: " + maxInDiagonal);
+		sum += maxInDiagonal;
+		
+		
+		int maxInDiagonal2 = matrix[matrix.length-1][matrix.length-1];
+		for (int i = 0; i < matrix.length; i++) {
+			if(maxInDiagonal2 < matrix[matrix.length-i-1][i]){
+				maxInDiagonal2 = matrix[matrix.length-i-1][i];
+			}
+		}
+		System.out.println("Maximum in second diagonal is: " + maxInDiagonal2);
+		sum += maxInDiagonal2;
+		
+		return sum;
+	}
+
+}

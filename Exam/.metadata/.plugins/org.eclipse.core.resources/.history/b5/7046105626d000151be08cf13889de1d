@@ -1,0 +1,16 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Matrix matrix = new Matrix();
+		int[][] matrix2 = matrix.fillMatrix();
+		String answer;
+		
+		do{
+			int choise = matrix.mune();
+		}while(answer.equalsIgnoreCase("Y"));
+
+	}
+
+}

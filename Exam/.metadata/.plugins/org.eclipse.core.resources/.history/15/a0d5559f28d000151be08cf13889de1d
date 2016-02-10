@@ -1,0 +1,29 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Matrix matrix = new Matrix();
+		int[][] matrix2 = matrix.fillMatrix();
+		
+		
+		do{
+			int choise = matrix.mune();
+			switch (choise) {
+			case 1:
+				matrix.writeInFile("Matrix.txt", matrix2);
+				break;
+			case 2:
+				System.out.println("The sum of the biggest number in rows column and diagonal is:");
+				matrix.sumOfTheBiggestNumbers();
+				break;
+			default:
+				System.out.println("Invalid option.");
+				break;
+			}
+			
+		}while(Integer.toString(matrix.answer()).equalsIgnoreCase("y"));
+
+	}
+
+}
